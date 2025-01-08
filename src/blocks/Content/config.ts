@@ -24,10 +24,6 @@ const columnFields: Field[] = [
         value: 'half',
       },
       {
-        label: 'Two Thirds',
-        value: 'twoThirds',
-      },
-      {
         label: 'Full',
         value: 'full',
       },

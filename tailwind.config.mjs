@@ -27,12 +27,12 @@ export default {
     container: {
       center: true,
       padding: {
-        '2xl': '2rem',
-        DEFAULT: '1rem',
-        lg: '2rem',
-        md: '2rem',
-        sm: '1rem',
-        xl: '2rem',
+        '2xl': '8.5rem',
+        DEFAULT: '4rem',
+        lg: '8.5rem',
+        md: '8.5rem',
+        sm: '4rem',
+        xl: '8.5rem',
       },
       screens: {
         '2xl': '86rem',

@@ -8,6 +8,8 @@ import type { Header } from '@/payload-types'
 
 import { Logo } from '@/components/Logo/Logo'
 import { HeaderNav } from './Nav'
+import { Button } from '@/components/ui/button'
+import { ArrowUpRightIcon } from 'lucide-react'
 
 interface HeaderClientProps {
   data: Header
@@ -30,12 +32,18 @@ export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
   }, [headerTheme])
 
   return (
-    <header className="container relative z-20   " {...(theme ? { 'data-theme': theme } : {})}>
-      <div className="py-8 flex justify-between">
+    <header
+      className="container relative z-20 bg-background "
+      {...(theme ? { 'data-theme': theme } : {})}
+    >
+      <div className="py-8 flex justify-between items-center">
         <Link href="/">
           <Logo loading="eager" priority="high" className="invert dark:invert-0" />
         </Link>
         <HeaderNav data={data} />
+        <Button variant="primary">
+          Get Started <ArrowUpRightIcon className="w-4 h-4 ml-2" />
+        </Button>
       </div>
     </header>
   )
